@@ -1,5 +1,5 @@
 PROJECT_NAME := "semantic-release-test"
-PKG := "github.com/trilogy-group/$(PROJECT_NAME)"
+PKG := "github.com/otanikotani/$(PROJECT_NAME)"
 PKG_LIST := $(shell go list ${PKG}/... | grep -v /vendor/)
 GO_FILES := $(shell find . -name '*.go' | grep -v /vendor/ | grep -v _test.go)
 

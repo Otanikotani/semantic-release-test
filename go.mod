@@ -1,3 +1,3 @@
-module github.com/trilogy-group/randombugz
+module github.com/otanikotani/semantic-release-test
 
 go 1.13
