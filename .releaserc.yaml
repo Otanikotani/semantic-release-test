@@ -1,5 +1,5 @@
 branch: master
-tagFormat: '${version}'
+tagFormat: 'v${version}'
 
 plugins:
   - @semantic-release/changelog
