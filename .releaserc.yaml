@@ -2,36 +2,12 @@ branch: master
 tagFormat: 'v${version}'
 
 plugins:
-  - @semantic-release/changelog
-  - @semantic-release/git
-  
+  - "@semantic-release/commit-analyzer"
+  - "@semantic-release/release-notes-generator"
+  - - "@semantic-release/changelog"
+    - changelogTitle: |-
+        ## Change Log
 
-#verifyConditions:
-#  - path: &npm '@semantic-release/npm'
-#    pkgRoot: '.'
-#  - &gh '@semantic-release/github'
-#
-#prepare:
-#  - '@semantic-release/changelog'
-#  - '@alorel-personal/semantic-release'
-#  - *npm
-#  - path: &exec '@semantic-release/exec'
-#    cmd: yarn run doctoc
-#  - path: *exec
-#    cmd: alo copy-files
-#  - path: *exec
-#    cmd: alo clean-dist
-#  - path: *exec
-#    cmd: alo clean-pkg-json
-#  - path: '@semantic-release/git'
-#    message: 'chore(release): ${nextRelease.version}'
-#    assets:
-#      - CHANGELOG.md
-#      - README.md
-#      - package.json
-#      - yarn.lock
-#
-#publish:
-#  - path: *npm
-#    pkgRoot: './dist'
-#  - *gh
+        All notable changes to this project will be documented in this file.
+        See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
