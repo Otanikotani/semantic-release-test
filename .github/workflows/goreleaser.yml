@@ -1,6 +1,6 @@
-name: Release
+name: Go Release
 on:
-  push:
+  create:
     tags:
       - v*
 
